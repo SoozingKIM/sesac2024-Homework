@@ -12,6 +12,6 @@
 1 
 */
 
-for (let i = 1; i <= 10; i = i + 1) {
-  console.log(i / 10);
+for (let i = 0.1; i <= 1; i = i + 0.1) {
+  console.log(+i.toFixed(1));
 }

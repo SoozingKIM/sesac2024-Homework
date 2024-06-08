@@ -12,14 +12,14 @@ addPoints(0.14, 0.28)     // 0.42
 addPoints(0.34, 0.226)    // 0.566
  */
 
+function getPointLength(x) {
+  return x?.toString().length;
+}
+
 function addPoints(a, b) {
-  let sum = a + b;
-  let len =
-    a.toString().split(".")[1].length > b.toString().split(".")[1].length
-      ? a.toString().split(".")[1].length
-      : b.toString().split(".")[1].length;
-  console.log(sum.toFixed(len));
-  return sum.toFixed(len);
+  let aLen = getPointLength(a);
+  let bLen = getPointLength(b);
+  console.log(+(a + b)?.toFixed(Math.max(aLen, bLen)));
 }
 
 addPoints(0.21354, 0.1);

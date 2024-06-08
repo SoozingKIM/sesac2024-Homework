@@ -10,8 +10,9 @@ Math.sqrt() 사용, 무리수만 출력!
  */
 
 for (let i = 1; i <= 10; i = i + 1) {
-  if (Number.isInteger(Math.sqrt(i))) {
+  const root = Math.sqrt(i);
+  if (root % 1 === 0) {
     continue;
   }
-  console.log(i, Math.sqrt(i).toFixed(3));
+  console.log(+root.toFixed(3));
 }
