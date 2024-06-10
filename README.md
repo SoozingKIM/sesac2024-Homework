@@ -45,3 +45,32 @@
 > addPoints(0.21354, 0.1) // 0.31354
 > addPoints(0.14, 0.28) // 0.42
 > addPoints(0.34, 0.226) // 0.566
+
+## 0608과제
+
+1. user 객체를 받아서 id와 name을 출력하는 함수를 3개의 함수로 작성하시오. (Function signature를 3개 이상으로 표현하기)
+
+2. 다음 user 객체에서 passwd 프로퍼티를 제외한 데이터를 userInfo 라는 변수에 할당하시오.
+
+   > const user = { id: 1, name: "Hong", passwd: "xxx", addr: "Seoul" };
+
+3. 다음 arr에서 3개의 id를 id1, id2, id3로 할당하시오.
+
+   > const arr = [[{id: 1}], [{id:2}, {id: 3}]]
+   > 출력결과: 1 2 3
+
+4. 다음과 같이 key를 전달하면 해당 값의 첫 글자를 제외한 문자를 리턴하는 함수를 destructing을 최대한 활용하여 (가),(나),(다) 부분을 작성하시오.
+
+```js
+const user = {name: 'Hong', passwd: 'xyz', addr: 'Seoul'};
+
+function getValueExceptInitial(k) {
+   const (가) = user;
+   const (나) = [...val];
+   return (다);
+}
+
+console.log(getValueExceptInitial('name')); // 'ong'
+console.log(getValueExceptInitial('passwd')); // 'yz'
+console.log(getValueExceptInitial('addr')); // 'eoul'
+```
